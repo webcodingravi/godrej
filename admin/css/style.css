@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+.btn-button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #044b50;
+}
+
+.btn-button:hover{
+background-color: #011d1f;
+color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #02363a;
+}
+a:hover {
+  color: rgb(53, 1, 1);
+}
+
+
+
+
+/* Admin Login */
+
+/* ===================== */
+/* ADMIN Panel CSS START */
+/* ===================== */
+
+.admin-login-form img {
+  margin-left: 6rem;
+margin-bottom: 2rem;
+}
+
+.admin-login-form .card {
+  padding: 2rem 2rem;
+  margin: 0 auto;
+}
+
+.admin-login-form input {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-login-form input::placeholder {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.admin-login-form input:focus {
+ box-shadow: none;
+}
+
+.admin-login-form .btn-login {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  margin-left: 6rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid gray;
+  transition: 0.2s ease-in-out;
+
+  
+}
+
+
+
+.admin-login-form .btn-login:hover {
+ background-color: rgb(0, 132, 255);
+ color: white;
+ border: 1px solid rgb(0, 132, 255);
+
+  
+}
+/* end admin login section */
+
+
+/* deshborard section header bar */
+
+
+
+.header .header-icon {
+  display: flex;
+  justify-content: end;
+
+}
+
+.header .header-icon {
+  margin-right: 1rem;
+
+}
+
+.header .user_name span{
+  color: white;
+  line-height: 3.1rem;
+}
+
+
+.header .scroll-on{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  box-shadow: 0 0.1rem 1rem 0 rgb(0,0,0,0.4);
+  transition: 0.9 ease-in-out;
+}
+
+
+.header .header-icon i{
+  color: white;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+
+      
+}
+
+.header .home-icon{
+  font-size: 2rem;
+  color: white;
+}
+.header .deshboard-header {
+  background-color: rgb(2, 53, 53);
+  padding: 1rem;
+}
+
+.navigation-deshboard {
+  font-weight: bold;
+}
+
+.navigation-deshboard {
+  font-weight: bold;
+
+}
+
+
+.navigation-deshboard .nav-item .nav-link{  
+margin-left: 1rem;
+padding: 0.3rem;
+color: #02363a;
+
+}
+
+.navigation-deshboard .navbar-nav .nav-item .nav-link:hover{
+  color: rgb(9, 163, 163);
+}
+
+.navigation-deshboard .navbar-toggler:focus {
+box-shadow: none;
+}
+.navigation-deshboard .navbar-toggler {
+color: #02363a;
+}
+
+/* end  header bar */
+
+
+/* 
+Deshboard section */
+.main-content {
+  margin-top: 6rem;
+}
+.main-content .card {
+  padding: 2rem 0;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content .card:hover{
+  transform: translateY(-5px);
+  
+}
+
+.main-content .icon{
+  font-size: 4rem;
+  color: #02363a;
+}
+
+
+  /* add admin section */
+  .admin-portal{
+
+    margin-top: 10rem;
+    margin-left: 15rem;
+
+}
+
+.admin-portal .card{
+border: none;
+ padding: 2rem 2rem;
+}
+
+
+.add-users {
+  transform: translate(10%, 10%);
+}
+.add-users .card{
+  padding: 2rem;
+}
+
+.add-users .card .form-group{
+  padding: 1rem;
+}
+
+.add-users .card .btn{
+  margin-left: 1rem;
+}
+
+
+/* pagination css */
+
+.pagination {
+  margin: 0 auto;
+}
+
+.pagination li a {
+ color: white;
+
+ text-decoration: none;
+
+}
+
+.pagination li {
+  background-color: rgb(6, 73, 117);
+  border-radius: 2rem ;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+  margin-left: 0.8rem;
+}
+
+.pagination li:hover {
+  background-color: rgb(2, 56, 59);
+ 
+}
+
+
+
+  /* modify user section */
+
+  .admin-update {
+    transform: translate(20%, 10%);
+  }
+
+  .admin-update .form-group {
+    margin-bottom: 1rem;
+  }
+
+
+  /* Banner section */
+  .banner_wrapper  {
+    margin-top: 4rem;
+   
+  }
+  .banner_wrapper .card {
+    padding: 3rem 3rem;
+  }
+ 
+  .banner_wrapper .form-group {
+    margin-bottom: 2rem;
+  }
+  .banner_wrapper .form-group input {
+     box-shadow: none;
+  }
+
+/* overview section */
+  .overview{
+     margin-top: 3rem;
+  }
+
+  .overview .card{
+   padding: 2rem 3rem;
+ }
+
+ .overview .card .form-group{
+ margin-bottom: 2rem;
+}
+
+.overview .card .form-group textarea,
+.overview .card .form-group input{
+box-shadow: none;
+ }
+
+
+ .overview-2 {
+  margin-top: 6rem;
+ }
+
+
+ .overview-2 .card{
+padding: 2rem 2rem;
+ }
+
+
+ .add-overview-2{
+  margin-top: 4rem;
+ }
+
+ .add-overview-2 .card{
+ padding: 2rem 2rem;
+ }
+
+ .add-overview-2 .card .form-group{
+ margin-bottom: 2rem;
+  }
+
+  .add-overview-2 .card .form-group input{
+    box-shadow: none;
+     }
+/* footer section */
+
+.footer-section {
+  margin-top: 30rem;
+  background-color: #044b50;
+}
+
+.footer-section h6{
+  font-weight: bold;
+  padding-top: 0.2rem;
+  color: white;
+
+
+}
+/* 
+price section  */
+
+
+.price-section {
+margin-top: 5rem;
+}
+
+.price-section .card{
+ padding: 2rem 3rem;
+  }
+
+  .price-section .card .form-group{
+    margin-bottom: 2rem;
+     }
+
+     .price-section .card .form-group input{
+      box-shadow: none;
+       }
+
+       .price-section .card .form-group textarea{
+        box-shadow: none;
+         }
+
+         .price-details {
+          margin-top: 4rem;
+         }
+
+         .price-details .card{
+         padding: 2rem 3rem;
+         }
+
+          /* add-price section */
+         .add-price-section {
+           margin-top: 4rem;
+         }
+
+         .add-price-section .card {
+          padding: 2rem 2rem;
+         }
+
+         .add-price-section .form-group {
+          margin-bottom: 2rem;
+         }
+
+         .add-price-section .form-group input{
+         box-shadow: none;
+         }
+
+         /* Amenities Section */
+
+         .amenities-section {
+          margin-top: 5rem;
+         }
+
+         .amenities-section .card{
+          padding: 2rem 2rem;
+         }
+
+         .amenities-section .card .form-group{
+           margin-bottom: 3rem;
+         }
+
+         .amenities-section .card .form-group input{
+          margin-bottom: 2rem;
+        }
+        .amenities-details {
+          margin-top: 4rem;
+        }
+
+        .amenities-details .card{
+          padding: 2rem 2rem;
+        }
+
+        .add-amenities-details{
+          margin-top: 3rem;
+        }
+
+        .add-amenities-details .card{
+          padding: 2rem 2rem;
+        }
+
+        .add-amenities-details .card .form-group {
+          margin-bottom: 2rem;
+        }
+        .add-amenities-details .card .form-group input{
+          box-shadow: none;
+        }
+
+        /* gellery section */
+
+
+        .gellery_section {
+          margin-top: 3rem;
+        }
+
+        .gellery_section .card{
+         padding: 2rem 2rem;
+        }
+
+        .gellery_section .card .form-group{
+          margin-bottom: 2rem;
+         }
+
+         /* location map */
+         .location_map {
+            margin-top: 4rem;
+         }
+
+         .location_map .card{
+          padding: 2rem 2rem;
+       }
+
+       .location_map .card .form-group{
+         margin-bottom: 2rem;
+     }
+
+     .location_map .card .form-group input{
+      box-shadow: none;
+  }
+
+
+  .localities {
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+
+  .localities .card{
+ padding: 2rem 2rem;
+  }
+
+  .localities .card .form-group{
+   margin-bottom: 2rem;
+     }
+
+     .localities_details{
+      margin-top: 4rem;
+      text-transform: uppercase;
+     }
+
+     .localities_details .card {
+      padding: 2rem 2rem;
+     }
+
+
+     
+/* ===================== */
+/* ADMIN Panel CSS END */
+/* ===================== */

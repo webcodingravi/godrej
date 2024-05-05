@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+:root {
+  --primary-color: rgb(151, 10, 88);
+  --secondry-color:rgb(32, 201, 252);
+  --green-color:rgb(9, 179, 60);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* 1 custom CSS */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+
+.btn-button {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  
+}
+.btn-button:hover{
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: white;
+  
+}
+
+.btn-button:focus {
+box-shadow: none;
+  
+}
+
+
+/* end custom css */
+
+
+/* Ribben bar Top */
+.ribban-bar {
+  background-color: rgb(51, 2, 47);
+}
+.ribban-bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+ 
+  font-weight: 500;
+}
+
+
+.ribban-bar .social-icon {
+padding-top: 1rem;
+
+margin-left: 10rem;
+}
+
+
+.ribban-bar .social-icon ul li {
+ display: inline;
+ padding-left: 1rem;
+
+ 
+
+}
+.ribban-bar .contect-icon {
+display: flex;
+}
+
+.ribban-bar .contect-icon li{
+list-style: none;
+padding-left: 2rem;
+padding-top: 1rem;
+
+
+}
+
+
+
+/* navigation bar start */
+.header_wrapper .navbar{
+  padding: 10px 0;
+  -webkit-transition:all .2s linear;
+  -o-webkit-transition:all .2s linear;
+  transition: all 0.2s linear; 
+}
+
+.header_wrapper .nav-item {
+ margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.header_wrapper .nav-item .nav-link:hover {
+  color: rgb(209, 35, 23);
+  transform: translateY(-2px);
+}
+
+
+
+
+.header_wrapper .navbar-toggler {
+  border: 0px;
+  height:auto;
+  color: gray;
+  line-height: 2;
+
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+.header-scrolled {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,0.5);
+  box-shadow: 0 4px 6px 0 rgba(12,0,46,0.5);
+}
+/* Navigation bar end */
+
+/* Banner section */
+
+.banner-section {
+  position: relative;
+  cursor: pointer;
+}
+
+.banner-section .banner{
+  width: 100%;
+  min-height: 500px; 
+   background-attachment: fixed;
+ 
+}
+
+.banner-section .banner img {
+  filter: brightness(0.6);
+  
+
+}
+
+
+
+.banner-section .banner-text {
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  left: 17%;
+  text-shadow: o.8px 0.8px #9f9f9f;
+  color: white;
+}
+
+
+.banner-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+
+.banner-section .banner-text h1{
+ font-size: 4rem;
+ margin-bottom: 1rem;
+ font-weight: bold;
+ text-transform: uppercase;
+ background-image: linear-gradient(
+  -225deg,
+  #ffffff 0%,
+  #ffffff 29%,
+  #ffffff 67%,
+  rgb(151, 10, 88) 100%);
+
+ 
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* end banner section */
+
+
+/* about section */
+
+
+.about-section {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  color: rgb(94, 92, 92);
+
+}
+
+.about-section h1{
+ font-size: 2rem;
+ font-weight: 500;
+ color: rgb(1, 1, 36);
+ padding-bottom: 1rem;
+}
+
+.about-section .about-text {
+  margin-top: 6rem;
+  padding-right: 2rem;
+  
+}
+
+
+.about-section .about-contact{
+background-color: rgb(45, 44, 46);
+
+
+
+
+}
+
+.about-section .about-contact-containt {
+  /* width: 500px; */
+  max-height: 600px;
+  
+  padding-left: 2rem;
+
+}
+
+.about-section .table {
+  margin-top: 4rem;
+  max-width: 400px;
+  margin-left: 2rem;
+
+
+
+
+}
+.about-section .table td{
+  background-color: white;
+  border-bottom: none;
+  
+}
+
+.about-section h2{
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  
+}
+
+
+.about-section .book-site-form{
+  margin-left: 2rem;
+
+}
+
+.about-section .book-site-form input{
+  box-shadow: none;
+  margin-bottom: 1rem;
+}
+
+.about-section .book-site-form .btn-about {
+  background-color: var(--primary-color);
+  padding: 0.4rem 5.3rem;
+  color: white;
+}
+
+.about-section .book-site-form .btn-about:hover {
+background-color: var(--secondry-color);
+}
+
+
+
+
+/* end about-section  */
+
+
+/* start price section */
+.price-section {
+  margin-top: 5rem;
+  position: relative;
+}
+.price-section .price-background img{
+  width: 100%;
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+.price-section .price-content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 10%;
+  left: 8%;
+}
+
+.price-section .price-content h6{
+  text-shadow: 2px 1px #020202;
+  
+}
+
+
+.price-content .card{
+ margin-bottom: 3rem;
+background-color: transparent;
+border: 2px solid white;
+}
+
+.price-content .card .card-heading{
+  padding: 1rem 2rem;
+  opacity: 0.9;
+  box-shadow: none;
+
+  background-color: rgb(168, 164, 164);
+  cursor: pointer;
+}
+
+.price-content .card .card-footer {
+  padding: 1rem 2rem;
+  opacity: 0.9;
+  box-shadow: none;
+  background-color: rgb(158, 158, 158);
+}
+
+.price-content .card .card-text h6{
+color: red;
+
+}
+
+/* end price section */
+
+
+/* start Amenities-section  */
+.Amenities-section {
+ margin-top: 6rem;
+ text-align: center;
+}
+
+.Amenities-section .card{
+  padding: 2rem 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  }
+
+  .Amenities-section .card:hover{
+    transform: translateY(-4px);
+    }
+
+.Amenities-section img{
+ width: 8rem;
+ margin-left: 30%;
+ }
+
+.Amenities-section .amenities-heading{
+ color: rgb(3, 3, 53);
+ }
+
+/* end Amenities-section */
+
+
+/* Gellery Section */
+.gellery-section {
+  color: white;
+  padding-top: 3rem;
+  
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: rgb(2, 43, 29);
+  margin-bottom: 5rem;
+}
+
+.gellery-section .carousel-inner {
+  max-height: 400px;
+}
+
+.gellery-section .carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+
+.gellery-section .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+/* start location section */
+.localities-map h2{
+   color: rgb(1, 1, 43);
+}
+
+
+
+.localities-map .location_map {
+ margin-left: 6rem;
+ cursor: pointer;
+}
+
+.localities-section{
+  background-color: rgb(230, 230, 230);
+  padding-top: 6rem;
+  min-height: 550px;
+}
+
+
+
+.localities-section h2{
+ color: rgb(3, 3, 77);
+}
+
+.localities-section .card .list-group-item:hover{
+ cursor: pointer;
+ color: rgb(235, 95, 149);
+}
+
+
+
+
+
+/* end location section */
+
+/* 
+Faq section */
+.faq-section{
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(5, 80, 80);
+}
+
+.faq-section{
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(5, 80, 80);
+}
+.faq-section .accordion {
+  text-align: left;
+ 
+}
+
+.faq-section .accordion button{
+ box-shadow: none;
+}
+
+
+/* 
+contact section */
+.contact-section {
+  margin-top: 4rem;
+  position: relative;
+}
+
+
+.contact-section .contact-background img{
+  height: 500px;
+  width: 100%;
+  opacity: 0.4;
+ }
+
+.contact-section .contact-details {
+ position: absolute;
+ top: 8%;
+ left: 30%;
+}
+
+.contact-details .form-group input{
+ box-shadow: none;
+ border-radius: 5px;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+
+
+}
+
+.contact-details .form-group textarea{
+  box-shadow: none;
+  border-radius: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ 
+ 
+ }
+
+ .contact-details .btn-submit{
+ padding: 1rem 3rem;
+ border-radius: 2rem;
+ color: white;
+ transition: all 0.5s ease-in-out;
+box-shadow: none;
+background-color: var(--primary-color);
+
+ 
+ }
+
+ .contact-details .btn-submit:hover{
+ background-color: var(--secondry-color);
+ 
+  
+  }
+
+
+  /* footer section */
+
+  .footer-section {
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 16, 22);
+  }
+
+  .footer-section p{
+   font-size: 1rem;
+   margin-top: 2rem;
+    text-align: justify;
+   
+  }
+
+
+/* scroll button */
+
+
+#myBtn {
+  height: 50px;
+  width: 50px;
+
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+
+
+
+
+
+/* media query */ 
+
+@media(max-width:768px) {
+  .ribban-bar {
+   display: none;
+  }
+  .header_wrapper .navbar {
+    text-align: center;
+  }
+
+  .banner-section .banner-text {
+  text-align: center;
+  margin-bottom: 6rem;
+  }
+  .banner-section .banner-text h1{
+  font-size: 2rem;
+
+        
+   }
+
+
+  .about-section .about-contact-containt {
+    /* width: 500px; */
+    max-height: 600px;
+    margin-top: 2rem;
+    padding-left: 0rem;
+  
+  }
+
+
+  .about-section {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+
+  .about-section h1{
+
+    font-size: 2rem;
+ 
+   }
+
+  .about-section p{
+    margin-left: 0;
+   
+   }
+   
+  .about-section .card{
+    margin-left: 0rem;
+   
+   
+   }
+
+   .about-section .btn-submit{
+   margin-left: 6rem;
+  
+  }
+
+
+  .about-section .book-site-form {
+    margin-bottom: 2rem;
+
+  }
+
+  .about-section .book-site-form input{
+   width: 12rem;
+  }
+
+ 
+
+  .price-section {
+    min-height: 1200px;
+  }
+
+ 
+  .price-section .price-content {
+    margin-top: -150px;
+  }
+
+  .price-section .price-background img{
+    min-height: 1600px;
+  }
+  
+
+  .price-section .price-content .card{
+    margin-bottom: 2rem;
+  }
+  
+
+  .price-section .price-content {
+    left: 4%;
+  }
+
+  .gellery-section .carousel-inner {
+    height: 300px;
+  }
+  
+  .localities-section .card{
+   margin-bottom: 2rem;
+  }
+  
+
+  .contact-section .contact-details {
+    left: 8%;
+   }
+
+
+   .Amenities-section {
+    margin-top: 10rem;
+   
+   }
+
+   .localities-map .location_map {
+    margin-left: 0rem;
+  
+   }
+   .contact-section .contact-details {
+
+    left: 2%;
+   }
+
+   .contact-section .contact-background img{
+    height: 800px;
+   
+
+   }
+   
+  
+}
